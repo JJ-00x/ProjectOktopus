@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-        MouseRayCast();
+        FaceMousePosition();
     }
 
     private void MovePlayer()
@@ -26,14 +26,14 @@ public class Movement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        // Calculate the forward direction based on the player's rotation
+        // Calculate the movement direction based on the player's forward direction
         Vector3 movement = transform.forward * verticalInput * moveSpeed;
         Vector3 movementhorizontal = transform.right * horizontalInput * moveSpeed;
         rb.velocity = movementhorizontal;
         rb.velocity = movement;
     }
 
-    private void MouseRayCast()
+    private void FaceMousePosition()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -44,7 +44,8 @@ public class Movement : MonoBehaviour
             direction.y = 0f; // Ensure the player stays upright (optional)
 
             // Rotate the player to face the hit point
-            transform.rotation = Quaternion.LookRotation(direction);
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
         }
     }
 }
