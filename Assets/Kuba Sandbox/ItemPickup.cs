@@ -34,13 +34,13 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.transform.SetParent(null, true);
         }
         
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.R) && hasItem)
         {
             Debug.Log(throwStrenght);
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
         }
 
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.R) && hasItem)
         {
             hasItem = false;
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
@@ -53,6 +53,7 @@ public class ItemPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "PickUp" && !hasItem)
         {
+            Debug.Log("ITEM");
             itemToPickUp = other.gameObject;
         }
     }

@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 5f;
 
     private Rigidbody rb;
+    
+    float rayCastDistance;
 
     private void Awake()
     {
@@ -37,14 +39,18 @@ public class Movement : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
+
         if (Physics.Raycast(ray, out hit))
         {
             // Calculate the direction from the player to the hit point
             Vector3 direction = hit.point - transform.position;
             direction.y = 0f; // Ensure the player stays upright (optional)
-
+            
             // Rotate the player to face the hit point
-            transform.rotation = Quaternion.LookRotation(direction);
+            if (hit.transform.tag != "Player")
+            {
+                transform.rotation = Quaternion.LookRotation(direction);
+            }
         }
     }
 }
