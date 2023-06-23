@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PutOffitems : MonoBehaviour
 {
     [SerializeField] private int moneyWorth;
 
     [SerializeField] private ScriptableObjectINT money;
+
+    [SerializeField] private ScriptableObjectINT weight;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +27,8 @@ public class PutOffitems : MonoBehaviour
     {
         if (other.tag == "PutOff")
         {
-            money.value = +moneyWorth;
-            Destroy(this);
+            money.value += moneyWorth;
+            Destroy(gameObject);
         }
     }
 }
