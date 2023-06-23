@@ -27,10 +27,14 @@ public class ItemPickup : MonoBehaviour
             hasItem = true;
             itemToPickUp.transform.position = hands.transform.position;
             itemToPickUp.transform.SetParent(hands, true);
+            
+            Destroy(itemToPickUp.GetComponent<Rigidbody>());
         }
         else if (Input.GetKeyDown(KeyCode.E) && hasItem)
         {
             hasItem = false;
+            AddRigidbody();
+            
             itemToPickUp.transform.SetParent(null, true);
         }
         
@@ -43,6 +47,8 @@ public class ItemPickup : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R) && hasItem)
         {
             hasItem = false;
+            AddRigidbody();
+            
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
             itemToPickUp.transform.SetParent(null, true);
             throwStrenght = 0;
@@ -56,5 +62,11 @@ public class ItemPickup : MonoBehaviour
             Debug.Log("ITEM");
             itemToPickUp = other.gameObject;
         }
+    }
+
+    private void AddRigidbody()
+    {
+        itemToPickUp.AddComponent<Rigidbody>();
+        itemToPickUp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
     }
 }
