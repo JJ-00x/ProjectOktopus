@@ -8,9 +8,12 @@ public class ItemPickup : MonoBehaviour
 {
     public Transform hands;
     
-    private GameObject itemToPickUp;
+    public static GameObject itemToPickUp;
 
     private bool hasItem;
+    
+    public float throwStrenght = 0f;
+    public float timeToThrow = 1;
     
     private void Start()
     {
@@ -29,6 +32,20 @@ public class ItemPickup : MonoBehaviour
         {
             hasItem = false;
             itemToPickUp.transform.SetParent(null, true);
+        }
+        
+        if (Input.GetKey(KeyCode.R))
+        {
+            Debug.Log(throwStrenght);
+            throwStrenght += (timeToThrow + 1) * Time.deltaTime;
+        }
+
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            hasItem = false;
+            itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
+            itemToPickUp.transform.SetParent(null, true);
+            throwStrenght = 0;
         }
     }
 
