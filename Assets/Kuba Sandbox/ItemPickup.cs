@@ -6,36 +6,36 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    public GameObject hands;
-    private GameObject itemToPickUp;
+    public Transform hands;
+    [SerializeField] private GameObject itemToPickUp;
 
     private bool hasItem;
-    private bool canTakeItem;
 
     private void Start()
     {
         hasItem = false;
-        canTakeItem = true;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !hasItem && canTakeItem)
+        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
         {
             hasItem = true;
-            canTakeItem = false;
-            
             itemToPickUp.transform.position = hands.transform.position;
-            itemToPickUp.transform.parent = hands.transform;
+            itemToPickUp.transform.SetParent(hands, true);
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
+        {
+            hasItem = false;
+            itemToPickUp.transform.SetParent(null, true);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PickUp" && !hasItem)
+        if (other.gameObject.tag == "PickUp" && !hasItem)
         {
             itemToPickUp = other.gameObject;
-            hasItem = true;
         }
     }
 }
