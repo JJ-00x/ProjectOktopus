@@ -7,10 +7,11 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public Transform hands;
-    [SerializeField] private GameObject itemToPickUp;
+    
+    private GameObject itemToPickUp;
 
     private bool hasItem;
-
+    
     private void Start()
     {
         hasItem = false;
