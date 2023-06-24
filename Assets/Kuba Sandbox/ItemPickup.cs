@@ -109,7 +109,7 @@ public class ItemPickup : MonoBehaviour
 
     private void ThrowSlider()
     {
-        throwStrSlider.maxValue = 10f;
+        throwStrSlider.maxValue = maxthrowStrenght;
         throwStrSlider.value = throwStrenght;
 
         fill.color = throwColor.Evaluate(throwStrSlider.normalizedValue);
