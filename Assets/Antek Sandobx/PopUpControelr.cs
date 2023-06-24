@@ -9,6 +9,7 @@ public class PopUpControelr : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI popUp;
     [SerializeField] private ScriptableObjectBOOL isPopUpEnable;
+    [SerializeField] private ScriptableObjectINT objectPrice;
 
     private bool cr_running;
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class PopUpControelr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        popUp.text ="+" + objectPrice.value.ToString() + "$";
         popUp.enabled = isPopUpEnable.value;
         if (popUp.enabled && cr_running == false)
         {

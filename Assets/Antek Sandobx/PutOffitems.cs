@@ -13,15 +13,15 @@ public class PutOffitems : MonoBehaviour
     [SerializeField] private int minValue;
 
     [SerializeField] private ScriptableObjectINT money;
-    [SerializeField] private TextMeshProUGUI popUp;
     [SerializeField] private ScriptableObjectBOOL hasItemSO;
     [SerializeField] private ScriptableObjectBOOL isPopUpEnable;
+    [SerializeField] private ScriptableObjectINT objectPrice;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        popUp.enabled = false;
+        
         isPopUpEnable.value = false;
         moneyWorth = UnityEngine.Random.Range(minValue, maxValue);
     }
@@ -36,8 +36,7 @@ public class PutOffitems : MonoBehaviour
     {
         if (other.tag == "PutOff")
         {
-            popUp.text ="+" + moneyWorth.ToString() + "$";
-            popUp.enabled = true;
+            objectPrice.value = moneyWorth;
             isPopUpEnable.value = true;
             money.value += moneyWorth;
             hasItemSO.value = false;

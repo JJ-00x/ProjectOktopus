@@ -373,6 +373,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
     - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: weightspeed
       value: 
       objectReference: {fileID: 11400000, guid: 63280214e70b49b439dbd08c461a521f, type: 2}
@@ -466,6 +470,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
     - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: isPopUpEnable
       value: 
       objectReference: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
@@ -540,6 +548,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
     - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: weightspeed
       value: 
       objectReference: {fileID: 11400000, guid: 63280214e70b49b439dbd08c461a521f, type: 2}
@@ -612,6 +624,10 @@ PrefabInstance:
       propertyPath: hasItemSO
       value: 
       objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
     - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: weightspeed
       value: 
@@ -1004,6 +1020,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1854625498}
     - target: {fileID: 1777269302, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+    - target: {fileID: 1777269302, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: isPopUpEnable
       value: 
       objectReference: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
@@ -1072,6 +1092,10 @@ PrefabInstance:
       propertyPath: hasItemSO
       value: 
       objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: objectPrice
+      value: 
+      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
     - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: weightspeed
       value: 
