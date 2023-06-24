@@ -22,6 +22,7 @@ public class ItemPickup : MonoBehaviour
     public Gradient throwColor;
     public Image fill;
     [SerializeField] private ScriptableObjectBOOL hasItemSO;
+    [SerializeField] private ScriptableObjectINT speed;
     
     private void Start()
     {
@@ -44,6 +45,14 @@ public class ItemPickup : MonoBehaviour
     
     private void ThrowItem()
     {
+        switch (speed.value)
+        {
+            case 4.5:
+
+
+            default:
+                break;
+        }
         if (Input.GetKey(KeyCode.R) && hasItem)
         {
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
