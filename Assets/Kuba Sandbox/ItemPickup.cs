@@ -24,28 +24,16 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private ScriptableObjectBOOL hasItemSO;
     [SerializeField] private ScriptableObjectINT speed;
     
-    private void Start()
+     void Start()
     {
         hasItem = false;
         throwStrSliderGameObject.SetActive(false);
     }
 
-    private void Update()
+     void Update()
     {
         //object interaction
-        PickUpDropItem();
-        hasItemSO.value = hasItem;
-        ThrowItem();
-        
-        //slider
-        ThrowSlider();
-        SetMaxThrowStrenght();
-       
-    }
-    
-    private void ThrowItem()
-    {
-        /*switch (speed.value)
+        switch (speed.value)
         {
             case 5:
                 maxthrowStrenght = 15f;
@@ -58,7 +46,19 @@ public class ItemPickup : MonoBehaviour
                 break;
             default:
                 break;
-        }*/
+        }
+        
+        PickUpDropItem();
+        ThrowItem();
+        
+        //slider
+        ThrowSlider();
+        SetMaxThrowStrenght();
+       
+    }
+    
+    private void ThrowItem()
+    {
         if (Input.GetKey(KeyCode.R) && hasItem)
         {
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
@@ -69,6 +69,7 @@ public class ItemPickup : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R) && hasItem)
         {
             hasItem = false;
+            hasItemSO.value = false;
             AddRigidbody();
 
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
@@ -81,22 +82,14 @@ public class ItemPickup : MonoBehaviour
 
     private void PickUpDropItem()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
+        if (itemToPickUp == null)
         {
-            switch (speed.value)
-            {
-                case 5:
-                    maxthrowStrenght = 15f;
-                    break;
-                case 4:
-                    maxthrowStrenght = 10f;
-                    break;
-                case 3:
-                    maxthrowStrenght = 5f;
-                    break;
-                default:
-                    break;
-            }
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
+        {  
+            hasItemSO.value = true;
             hasItem = true;
 
             itemToPickUp.transform.SetParent(hands, true);
@@ -109,6 +102,7 @@ public class ItemPickup : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && hasItem)
         {
             hasItem = false;
+            hasItemSO.value = false;
             AddRigidbody();
 
             itemToPickUp.transform.SetParent(null, true);
@@ -137,6 +131,15 @@ public class ItemPickup : MonoBehaviour
         {
             Debug.Log("ITEM");
             itemToPickUp = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "PickUp" && !hasItem)
+        {
+            Debug.Log("ITEM");
+            itemToPickUp = null;
         }
     }
 

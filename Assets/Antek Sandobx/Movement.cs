@@ -23,7 +23,6 @@ public class Movement : MonoBehaviour
     {
         if (hasItem.value == false)
         {
-            hasItem.value = false;
             moveSpeed = 5f;
         }
         else if (hasItem.value)

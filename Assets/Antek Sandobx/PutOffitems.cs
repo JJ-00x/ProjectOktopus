@@ -12,12 +12,7 @@ public class PutOffitems : MonoBehaviour
     [SerializeField] private int minValue;
 
     [SerializeField] private ScriptableObjectINT money;
-
-    [SerializeField] private ScriptableObjectINT weightspeed;
-
-    [SerializeField] private ScriptableObjectINT speed;
-
-    [SerializeField] private ScriptableObjectBOOL hasItem;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +22,7 @@ public class PutOffitems : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasItem.value = true)
-        {
-            speed.value = weightspeed.value;
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
