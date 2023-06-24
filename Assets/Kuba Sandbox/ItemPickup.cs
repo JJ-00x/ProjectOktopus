@@ -21,6 +21,7 @@ public class ItemPickup : MonoBehaviour
     public Slider throwStrSlider;
     public Gradient throwColor;
     public Image fill;
+    [SerializeField] private ScriptableObjectBOOL hasItemSO;
     
     private void Start()
     {
@@ -32,11 +33,13 @@ public class ItemPickup : MonoBehaviour
     {
         //object interaction
         PickUpDropItem();
+        hasItemSO.value = hasItem;
         ThrowItem();
         
         //slider
         ThrowSlider();
         SetMaxThrowStrenght();
+        Debug.Log(hasItem);
     }
     
     private void ThrowItem()

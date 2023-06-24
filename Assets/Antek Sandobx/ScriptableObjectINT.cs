@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(menuName = "Scriptable Object/Int", fileName = "SO INT")]
+[CreateAssetMenu(menuName = "Scriptable Object/Float", fileName = "SO Float")]
 public class ScriptableObjectINT : ScriptableObject
 {
-    public int value;
+    public float value;
 }
 

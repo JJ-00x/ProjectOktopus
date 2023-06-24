@@ -6,6 +6,8 @@ using UnityEngine.Tilemaps;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private ScriptableObjectBOOL hasItem;
+    [SerializeField] private ScriptableObjectINT speed;
     public float moveSpeed = 5f;
 
     private Rigidbody rb;
@@ -19,6 +21,15 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (hasItem.value == false)
+        {
+            hasItem.value = false;
+            moveSpeed = 5f;
+        }
+        else if (hasItem.value)
+        {
+            moveSpeed = speed.value;
+        }
         MovePlayer();
         MouseRayCast();
     }
