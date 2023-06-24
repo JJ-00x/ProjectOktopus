@@ -8,6 +8,9 @@ public class PopUpControelr : MonoBehaviour
     [SerializeField] private float timer = 10f;
 
     [SerializeField] private TextMeshProUGUI popUp;
+    [SerializeField] private ScriptableObjectBOOL isPopUpEnable;
+
+    private bool cr_running;
     // Start is called before the first frame update
     void Awake()
     {
@@ -17,7 +20,8 @@ public class PopUpControelr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (popUp.enabled == true)
+        popUp.enabled = isPopUpEnable.value;
+        if (popUp.enabled && cr_running == false)
         {
             StartCoroutine(TextFade());
         }
@@ -25,6 +29,7 @@ public class PopUpControelr : MonoBehaviour
 
     IEnumerator TextFade()
     {
+        cr_running = true;
         Color originalColor = popUp.color; // Store the original color of the TextMeshProUGUI component
         float elapsedTime = 0f;
         while (elapsedTime < timer)
@@ -45,7 +50,10 @@ public class PopUpControelr : MonoBehaviour
         Color fullyOpaqueColor = new Color(originalColor.r, originalColor.g, originalColor.b, 1f);
         popUp.color = fullyOpaqueColor;
 
-        popUp.enabled = false; // Disable the TextMeshProUGUI component after the fading is complete
+        popUp.enabled = false;// Disable the TextMeshProUGUI component after the fading is complete
+        isPopUpEnable.value = false;
+        StopCoroutine(TextFade());
+        cr_running = false; 
     }
 
 }

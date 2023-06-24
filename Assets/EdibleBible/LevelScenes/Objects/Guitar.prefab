@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 233494361100233531}
   m_Layer: 0
   m_Name: Guitar
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 558157035871692359}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.617, z: 0}
-  m_LocalScale: {x: 0.17179105, y: 0.171791, z: 0.17179097}
+  m_LocalScale: {x: 2.5101972, y: 2.5101962, z: 2.5101957}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1927906898629882404}
@@ -77,9 +77,8 @@ MonoBehaviour:
   maxValue: 3200
   minValue: 320
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  weightspeed: {fileID: 11400000, guid: afc6fc791cfcbdd42b221cb1771da927, type: 2}
-  speed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
-  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  popUp: {fileID: 0}
+  hasItemSO: {fileID: 0}
 --- !u!1 &7349196404498266265
 GameObject:
   m_ObjectHideFlags: 0

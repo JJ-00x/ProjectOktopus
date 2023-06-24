@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916527224383208721}
-  m_LocalRotation: {x: 0.000000053385083, y: 0.7071068, z: 0.7071068, w: -0.000000053385083}
-  m_LocalPosition: {x: 0.146, y: 0.333, z: 0.374}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.31767708, y: 0.193855, z: 0.144899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9025516119126660157}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &6936275570831294632
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 60593080326713473}
   m_Layer: 0
   m_Name: Spoon
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8601268236486986175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.054, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -134,9 +134,8 @@ MonoBehaviour:
   maxValue: 120
   minValue: 0
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  weightspeed: {fileID: 11400000, guid: 63280214e70b49b439dbd08c461a521f, type: 2}
-  speed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
-  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  popUp: {fileID: 0}
+  hasItemSO: {fileID: 0}
 --- !u!65 &4672003181015024824
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8066886102518594184}
   m_Layer: 0
   m_Name: ShelfWeird
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 5054229318495209113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.518, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 18.94452, y: 18.94452, z: 18.94452}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5893740635341813147}
@@ -160,6 +160,5 @@ MonoBehaviour:
   maxValue: 55
   minValue: 15
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  weightspeed: {fileID: 11400000, guid: 76d3c603c5d8e7344b44311410c6110c, type: 2}
-  speed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
-  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  popUp: {fileID: 0}
+  hasItemSO: {fileID: 0}
