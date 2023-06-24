@@ -1,61 +1,102 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemPickup : MonoBehaviour
 {
     public Transform hands;
-    
     public static GameObject itemToPickUp;
 
     private bool hasItem;
     
     public float throwStrenght = 0f;
+    public float maxthrowStrenght = 15f;
     public float timeToThrow = 1;
-    [SerializeField] private ScriptableObjectBOOL hasItemBool;
+
+    public GameObject throwStrSliderGameObject;
+    public Slider throwStrSlider;
+    public Gradient throwColor;
+    public Image fill;
     
     private void Start()
     {
         hasItem = false;
+        throwStrSliderGameObject.SetActive(false);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
-        {
-            hasItem = true;
-            itemToPickUp.transform.position = hands.transform.position;
-            itemToPickUp.transform.SetParent(hands, true);
-            
-            Destroy(itemToPickUp.GetComponent<Rigidbody>());
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
-        {
-            hasItem = false;
-            AddRigidbody();
-            
-            itemToPickUp.transform.SetParent(null, true);
-        }
+        //object interaction
+        PickUpDropItem();
+        ThrowItem();
         
+        //slider
+        ThrowSlider();
+        SetMaxThrowStrenght();
+    }
+    
+    private void ThrowItem()
+    {
         if (Input.GetKey(KeyCode.R) && hasItem)
         {
-            Debug.Log(throwStrenght);
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
+
+            throwStrSliderGameObject.SetActive(true);
         }
 
         if (Input.GetKeyUp(KeyCode.R) && hasItem)
         {
             hasItem = false;
             AddRigidbody();
-            
+
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
             itemToPickUp.transform.SetParent(null, true);
             throwStrenght = 0;
-        }
 
-        hasItemBool.value = hasItem;
+            throwStrSliderGameObject.SetActive(false);
+        }
+    }
+
+    private void PickUpDropItem()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
+        {
+            hasItem = true;
+
+            itemToPickUp.transform.SetParent(hands, true);
+            itemToPickUp.transform.position = hands.transform.position;
+
+            itemToPickUp.transform.rotation = Quaternion.identity;
+
+            Destroy(itemToPickUp.GetComponent<Rigidbody>());
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
+        {
+            hasItem = false;
+            AddRigidbody();
+
+            itemToPickUp.transform.SetParent(null, true);
+        }
+    }
+
+    private void ThrowSlider()
+    {
+        throwStrSlider.maxValue = 10f;
+        throwStrSlider.value = throwStrenght;
+
+        fill.color = throwColor.Evaluate(throwStrSlider.normalizedValue);
+    }
+    
+    private void SetMaxThrowStrenght()
+    {
+        if (throwStrenght >= maxthrowStrenght)
+        {
+            throwStrenght = maxthrowStrenght;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
