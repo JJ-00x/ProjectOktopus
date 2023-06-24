@@ -729,6 +729,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 598613051, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: hasItemSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+    - target: {fileID: 598613051, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: throwStrUI
       value: 
       objectReference: {fileID: 466125867}
@@ -736,6 +740,14 @@ PrefabInstance:
       propertyPath: timeToThrow
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2465266608476443861, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: speed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+    - target: {fileID: 2465266608476443861, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: hasItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
     - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: m_RootOrder
       value: 2
