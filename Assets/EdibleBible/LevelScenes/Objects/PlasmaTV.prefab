@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8617278511494880546}
   m_Layer: 0
   m_Name: PlasmaTV
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,9 +175,8 @@ MonoBehaviour:
   maxValue: 4500
   minValue: 200
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  weightspeed: {fileID: 11400000, guid: 76d3c603c5d8e7344b44311410c6110c, type: 2}
-  speed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
-  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  popUp: {fileID: 0}
+  hasItemSO: {fileID: 0}
 --- !u!1 &1371673273911427995
 GameObject:
   m_ObjectHideFlags: 0

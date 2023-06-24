@@ -15,12 +15,14 @@ public class PutOffitems : MonoBehaviour
     [SerializeField] private ScriptableObjectINT money;
     [SerializeField] private TextMeshProUGUI popUp;
     [SerializeField] private ScriptableObjectBOOL hasItemSO;
+    [SerializeField] private ScriptableObjectBOOL isPopUpEnable;
     
     
     // Start is called before the first frame update
     void Start()
     {
         popUp.enabled = false;
+        isPopUpEnable.value = false;
         moneyWorth = UnityEngine.Random.Range(minValue, maxValue);
     }
 
@@ -36,6 +38,7 @@ public class PutOffitems : MonoBehaviour
         {
             popUp.text ="+" + moneyWorth.ToString() + "$";
             popUp.enabled = true;
+            isPopUpEnable.value = true;
             money.value += moneyWorth;
             hasItemSO.value = false;
             Destroy(gameObject);
