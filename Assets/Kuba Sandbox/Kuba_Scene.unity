@@ -360,6 +360,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
   m_PrefabInstance: {fileID: 3908184792225406603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1109588528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7847823267865820985, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_Name
+      value: ItemToPickUp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
 --- !u!1 &1538796460
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +532,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1854625498}
+--- !u!1001 &1585236530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: weightspeed
+      value: 
+      objectReference: {fileID: 11400000, guid: 76d3c603c5d8e7344b44311410c6110c, type: 2}
+    - target: {fileID: 7847823267865820985, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_Name
+      value: ItemToPickUp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847823267865820989, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
 --- !u!1 &1641169819
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1339642154, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
+      propertyPath: weightspeed
+      value: 
+      objectReference: {fileID: 11400000, guid: 63280214e70b49b439dbd08c461a521f, type: 2}
     - target: {fileID: 7847823267865820985, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
       propertyPath: m_Name
       value: ItemToPickUp

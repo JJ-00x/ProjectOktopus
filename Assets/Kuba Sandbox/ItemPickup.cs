@@ -15,7 +15,7 @@ public class ItemPickup : MonoBehaviour
     
     public float throwStrenght = 0f;
     public float maxthrowStrenght = 15f;
-    public float timeToThrow = 1;
+    public float timeToThrow = 7;
 
     public GameObject throwStrSliderGameObject;
     public Slider throwStrSlider;
@@ -40,19 +40,25 @@ public class ItemPickup : MonoBehaviour
         //slider
         ThrowSlider();
         SetMaxThrowStrenght();
-        Debug.Log(hasItem);
+       
     }
     
     private void ThrowItem()
     {
-        switch (speed.value)
+        /*switch (speed.value)
         {
-            case 4.5:
-
-
+            case 5:
+                maxthrowStrenght = 15f;
+                break;
+            case 4:
+                maxthrowStrenght = 10f;
+                break;
+            case 3:
+                maxthrowStrenght = 5f;
+                break;
             default:
                 break;
-        }
+        }*/
         if (Input.GetKey(KeyCode.R) && hasItem)
         {
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
@@ -77,6 +83,20 @@ public class ItemPickup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !hasItem)
         {
+            switch (speed.value)
+            {
+                case 5:
+                    maxthrowStrenght = 15f;
+                    break;
+                case 4:
+                    maxthrowStrenght = 10f;
+                    break;
+                case 3:
+                    maxthrowStrenght = 5f;
+                    break;
+                default:
+                    break;
+            }
             hasItem = true;
 
             itemToPickUp.transform.SetParent(hands, true);
