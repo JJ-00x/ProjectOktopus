@@ -26,7 +26,7 @@ public class ItemPickup : MonoBehaviour
     
      void Start()
     {
-        hasItem = false;
+        hasItemSO.value = false;
         throwStrSliderGameObject.SetActive(false);
     }
 
@@ -59,16 +59,15 @@ public class ItemPickup : MonoBehaviour
     
     private void ThrowItem()
     {
-        if (Input.GetKey(KeyCode.R) && hasItem)
+        if (Input.GetKey(KeyCode.R) && hasItemSO.value)
         {
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
 
             throwStrSliderGameObject.SetActive(true);
         }
 
-        if (Input.GetKeyUp(KeyCode.R) && hasItem)
+        if (Input.GetKeyUp(KeyCode.R) && hasItemSO.value)
         {
-            hasItem = false;
             hasItemSO.value = false;
             AddRigidbody();
 
@@ -87,10 +86,10 @@ public class ItemPickup : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
+        if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
         {  
             hasItemSO.value = true;
-            hasItem = true;
+            
 
             itemToPickUp.transform.SetParent(hands, true);
             itemToPickUp.transform.position = hands.transform.position;
@@ -99,9 +98,8 @@ public class ItemPickup : MonoBehaviour
 
             Destroy(itemToPickUp.GetComponent<Rigidbody>());
         }
-        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
+        else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
         {
-            hasItem = false;
             hasItemSO.value = false;
             AddRigidbody();
 
@@ -127,7 +125,7 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "PickUp" && !hasItem)
+        if (other.gameObject.tag == "PickUp" && !hasItemSO.value)
         {
             Debug.Log("ITEM");
             itemToPickUp = other.gameObject;
@@ -136,7 +134,7 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "PickUp" && !hasItem)
+        if (other.gameObject.tag == "PickUp" && !hasItemSO.value)
         {
             Debug.Log("ITEM");
             itemToPickUp = null;
