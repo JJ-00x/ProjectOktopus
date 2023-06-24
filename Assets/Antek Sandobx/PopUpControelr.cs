@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PopUpControelr : MonoBehaviour
 {
-    [SerializeField] private float timer = 2f;
+    [SerializeField] private float timer = 10f;
 
     [SerializeField] private TextMeshProUGUI popUp;
     // Start is called before the first frame update
@@ -26,24 +26,22 @@ public class PopUpControelr : MonoBehaviour
     IEnumerator TextFade()
     {
         Color originalColor = popUp.color; // Store the original color of the TextMeshProUGUI component
-
-        float elapsedTime = 0f; // Initialize the elapsed time
-
+        float elapsedTime = 0f;
         while (elapsedTime < timer)
-        {
-            elapsedTime += Time.deltaTime; // Increase the elapsed time by the time passed since the last frame
+            {
+                elapsedTime += Time.deltaTime; // Increase the elapsed time by the time passed since the last frame
 
-            // Calculate the current alpha value based on the elapsed time and the fade duration
-            float alpha = Mathf.Lerp(1f, 0f, elapsedTime / timer);
+                // Calculate the current alpha value based on the elapsed time and the fade duration
+                float alpha = Mathf.Lerp(1f, 0f, elapsedTime / timer);
 
-            // Set the alpha value in the vertex color
-            Color fadedColor = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-            popUp.color = fadedColor;
+                // Set the alpha value in the vertex color
+                Color fadedColor = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+                popUp.color = fadedColor;
 
-            yield return null;
-        }
+                yield return null;
+            }
 
-        // Ensure the alpha value is set back to 1 when the fade out is complete
+            // Ensure the alpha value is set back to 1 when the fade out is complete
         Color fullyOpaqueColor = new Color(originalColor.r, originalColor.g, originalColor.b, 1f);
         popUp.color = fullyOpaqueColor;
 
