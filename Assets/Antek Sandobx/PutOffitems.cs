@@ -34,21 +34,11 @@ public class PutOffitems : MonoBehaviour
     {
         if (other.tag == "PutOff")
         {
-            popUp.text ="+" + moneyWorth.ToString();
+            popUp.text ="+" + moneyWorth.ToString() + "$";
             popUp.enabled = true;
             money.value += moneyWorth;
             hasItemSO.value = false;
             Destroy(gameObject);
         }
-    }
-
-    private void OnDestroy()
-    {
-        Invoke("TrunOffText", 2f);
-    }
-
-    void TrunOffText()
-    {
-        popUp.enabled = false;
     }
 }
