@@ -14,6 +14,7 @@ public class ItemPickup : MonoBehaviour
     
     public float throwStrenght = 0f;
     public float timeToThrow = 1;
+    [SerializeField] private ScriptableObjectBOOL hasItemBool;
     
     private void Start()
     {
@@ -53,6 +54,8 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.transform.SetParent(null, true);
             throwStrenght = 0;
         }
+
+        hasItemBool.value = hasItem;
     }
 
     private void OnTriggerEnter(Collider other)
