@@ -134,8 +134,9 @@ MonoBehaviour:
   maxValue: 120
   minValue: 0
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  popUp: {fileID: 0}
-  hasItemSO: {fileID: 0}
+  hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
 --- !u!65 &4672003181015024824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8601268236486986175}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.22783825, y: 0.058151484, z: 0.06837988}
@@ -157,7 +158,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8601268236486986175}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.22591265, y: 0.052980002, z: 0.06638038}

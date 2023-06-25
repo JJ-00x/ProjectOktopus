@@ -56,7 +56,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136216451521744776}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.18864839, y: 0.7154499, z: 0.16942206}
@@ -77,9 +77,9 @@ MonoBehaviour:
   maxValue: 15
   minValue: 0
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  popUp: {fileID: 0}
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
 --- !u!1 &8656650871170296343
 GameObject:
   m_ObjectHideFlags: 0
