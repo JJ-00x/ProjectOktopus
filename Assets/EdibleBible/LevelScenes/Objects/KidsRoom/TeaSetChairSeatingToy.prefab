@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsCollider: {fileID: 0}
-  playerCollider: {fileID: 0}
+  objectsCollider: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  playerCollider: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
 --- !u!1001 &4217374031037402617
 PrefabInstance:
   m_ObjectHideFlags: 0
