@@ -60,6 +60,45 @@ public class ItemPickup : MonoBehaviour
         SetMaxThrowStrenght();
     }
 
+
+
+    private void PickUpDropItem()
+    {
+        if (itemToPickUp == null)
+        {
+            hasItem = false;
+        }
+
+        /*if (hasItem)
+        {
+            //itemToPickUp.transform.position = hands.transform.position;
+            //itemToPickUp.transform.rotation = hands.rotation;
+            itemToPickUp.transform.GetChild(0).transform.position = hands.transform.position;
+            itemToPickUp.transform.GetChild(0).transform.rotation = Quaternion.identity;
+        }*/
+        
+        if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
+        {
+            hasItemSO.value = true;
+            hasItem = true;
+
+            itemToPickUp.transform.SetParent(hands, true);
+            itemToPickUp.GetComponent<Rigidbody>().isKinematic = true;
+            itemToPickUp.GetComponent<PickableObject>().playerCollider.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
+        {
+            hasItemSO.value = false;
+            hasItem = false;
+
+            itemToPickUp.transform.SetParent(null, true);
+            itemToPickUp.GetComponent<Rigidbody>().isKinematic = false;
+            itemToPickUp.GetComponent<PickableObject>().playerCollider.SetActive(true);
+
+        }
+    }
+    
+    //to update
     private void ThrowItem()
     {
         if (Input.GetKey(KeyCode.R) && hasItemSO.value)
@@ -73,8 +112,8 @@ public class ItemPickup : MonoBehaviour
         {
             hasItemSO.value = false;
             hasItem = false;
-            AddRigidbody();
 
+            itemToPickUp.GetComponent<Rigidbody>().isKinematic = false;
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
             itemToPickUp.transform.SetParent(null, true);
             throwStrenght = 0;
@@ -83,41 +122,8 @@ public class ItemPickup : MonoBehaviour
         }
     }
 
-    private void PickUpDropItem()
-    {
-        if (itemToPickUp == null)
-        {
-            hasItem = false;
-        }
-
-        if (hasItem)
-        {
-            itemToPickUp.transform.position = hands.transform.position;
-            itemToPickUp.transform.rotation = hands.rotation;
-        }
-        
-        if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
-        {
-            hasItemSO.value = true;
-            hasItem = true;
-
-            itemToPickUp.transform.SetParent(hands, true);
-            itemToPickUp.GetComponent<Rigidbody>().isKinematic = true;
-
-            //itemToPickUp.transform.position = hands.transform.position;
-            //itemToPickUp.transform.rotation = Quaternion.identity;
-            //Destroy(itemToPickUp.GetComponent<Rigidbody>());
-
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
-        {
-            hasItemSO.value = false;
-            hasItem = false;
-
-            itemToPickUp.transform.SetParent(null, true);
-        }
-    }
-
+    
+    
     private void ThrowSlider()
     {
         throwStrSlider.maxValue = maxthrowStrenght;
@@ -150,11 +156,5 @@ public class ItemPickup : MonoBehaviour
             Debug.Log("ITEM");
             itemToPickUp = null;
         }
-    }
-
-    private void AddRigidbody()
-    {
-        itemToPickUp.AddComponent<Rigidbody>();
-        itemToPickUp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
     }
 }

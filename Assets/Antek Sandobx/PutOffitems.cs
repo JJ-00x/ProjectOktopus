@@ -21,8 +21,8 @@ public class PutOffitems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        isPopUpEnable.value = false;
+        if(isPopUpEnable)
+            isPopUpEnable.value = false;
         moneyWorth = UnityEngine.Random.Range(minValue, maxValue);
     }
 

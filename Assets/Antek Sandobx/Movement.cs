@@ -29,29 +29,32 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = speed.value;
         }
-        MovePlayer();
+
         MouseRayCast();
+        
+        if (rayCastDistance > 2)
+        {
+            MovePlayer();
+        }
+
     }
 
     private void MovePlayer()
     {
         float verticalInput = Input.GetAxis("Vertical");
-        float horizontalInput = Input.GetAxis("Horizontal");
-
-        // Calculate the forward direction based on the player's rotation
         Vector3 movement = transform.forward * verticalInput * moveSpeed;
-        Vector3 movementhorizontal = transform.right * horizontalInput * moveSpeed;
-        rb.velocity = movementhorizontal;
         rb.velocity = movement;
     }
 
+    public LayerMask LayerMask;
     private void MouseRayCast()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask))
         {
+            Debug.Log(hit.transform.gameObject.name);
             // Calculate the direction from the player to the hit point
             Vector3 direction = hit.point - transform.position;
             direction.y = 0f; // Ensure the player stays upright (optional)
@@ -59,8 +62,11 @@ public class Movement : MonoBehaviour
             // Rotate the player to face the hit point
             if (hit.transform.tag != "Player")
             {
-                transform.rotation = Quaternion.LookRotation(direction);
+                transform.forward = direction;
             }
+
+            rayCastDistance = Vector3.Distance(transform.position, hit.point);
+            //Debug.Log(rayCastDistance);
         }
     }
 }
