@@ -831,18 +831,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 8.734
       objectReference: {fileID: 0}
-    - target: {fileID: 1065649072588942611, guid: 939e2c23186230c4eab0d51d47e3a412, type: 3}
-      propertyPath: m_ShadowAngle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065649072588942611, guid: 939e2c23186230c4eab0d51d47e3a412, type: 3}
-      propertyPath: m_Lightmapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065649072588942611, guid: 939e2c23186230c4eab0d51d47e3a412, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1065649072588942620, guid: 939e2c23186230c4eab0d51d47e3a412, type: 3}
       propertyPath: m_Name
       value: Directional Light
@@ -12653,7 +12641,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 598613051, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: timeToThrow
-      value: 20
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 754170252, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1538796465, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: cam
