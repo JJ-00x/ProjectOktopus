@@ -39,14 +39,14 @@ public class ItemPickup : MonoBehaviour
         //object interaction
         switch (speed.value)
         {
-            case 5:
-                maxthrowStrenght = 45f;
+            case 20:
+                maxthrowStrenght = 40f;
                 break;
-            case 4:
+            case 18:
                 maxthrowStrenght = 30f;
                 break;
-            case 3:
-                maxthrowStrenght = 15f;
+            case 15:
+                maxthrowStrenght = 20f;
                 break;
             default:
                 break;
@@ -117,10 +117,9 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.GetComponent<Rigidbody>().isKinematic = false;
             itemToPickUp.transform.SetParent(null, true);
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
+            throwStrSliderGameObject.SetActive(false);
             
             throwStrenght = 0;
-
-            throwStrSliderGameObject.SetActive(false);
         }
     }
 
