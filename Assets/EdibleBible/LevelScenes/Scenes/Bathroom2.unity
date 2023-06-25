@@ -13398,6 +13398,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1538796465, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1357290965}
     - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: m_RootOrder
       value: 1
