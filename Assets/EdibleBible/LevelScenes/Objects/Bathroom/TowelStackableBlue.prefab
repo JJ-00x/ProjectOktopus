@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7929763732835714336}
   - component: {fileID: -39330676007729443}
   - component: {fileID: 3013446367579156255}
+  - component: {fileID: -3653086739585513401}
   m_Layer: 0
   m_Name: TowelStackableBlue
   m_TagString: PickUp
@@ -116,6 +117,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 3834625555611567456}
   playerCollider: {fileID: 1217793345929471080}
+--- !u!114 &-3653086739585513401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824943114871120809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &4682433254532396338
 GameObject:
   m_ObjectHideFlags: 0

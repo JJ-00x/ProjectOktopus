@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: 811791821881641273}
   - component: {fileID: -3321693294646299388}
   - component: {fileID: -2455700188104122028}
+  - component: {fileID: -583801898165511266}
+  - component: {fileID: 6701611274419240627}
   m_Layer: 0
   m_Name: ToiletSquare
   m_TagString: PickUp
@@ -200,6 +202,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 1827743716085297230}
   playerCollider: {fileID: 6927155195501208011}
+--- !u!114 &-583801898165511266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820340868833819243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+--- !u!114 &6701611274419240627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820340868833819243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &8190906998516387109
 GameObject:
   m_ObjectHideFlags: 0

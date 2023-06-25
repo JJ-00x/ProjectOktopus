@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4146710432760000342}
   - component: {fileID: 2134561429759115068}
   - component: {fileID: 7897713127119387752}
+  - component: {fileID: -2371879420653064228}
   m_Layer: 0
   m_Name: PillowTube
   m_TagString: PickUp
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 4054014550611070687}
   playerCollider: {fileID: 7830480496738067461}
+--- !u!114 &-2371879420653064228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162477426917143056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &4192963718693202162
 PrefabInstance:
   m_ObjectHideFlags: 0

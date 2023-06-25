@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 924160637100004959}
   - component: {fileID: -4860677363492392177}
   - component: {fileID: 5154372392626926913}
+  - component: {fileID: 7281166684426339760}
   m_Layer: 0
   m_Name: VaseBigBottom
   m_TagString: PickUp
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 7486973306790195001}
   playerCollider: {fileID: 3636077084816769663}
+--- !u!114 &7281166684426339760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307545216342361260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &7597639252884371319
 GameObject:
   m_ObjectHideFlags: 0

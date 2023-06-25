@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6758805189149618212}
   - component: {fileID: 1550755345940231328}
   - component: {fileID: -6741223631600166848}
+  - component: {fileID: 6400007945678411622}
   m_Layer: 0
   m_Name: CardboardBoxBrown
   m_TagString: PickUp
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 4575738651008555774}
   playerCollider: {fileID: 1894045016499414898}
+--- !u!114 &6400007945678411622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2357889246034075300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &8960001866306285469
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4445818775981670659}
   - component: {fileID: 7705780826054472609}
   - component: {fileID: 1528644165110057009}
+  - component: {fileID: 320722639601853569}
   m_Layer: 0
   m_Name: PCMouse
   m_TagString: PickUp
@@ -150,6 +151,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   playerCollider: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+--- !u!114 &320722639601853569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6147841057306658855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &889074097564660086
 PrefabInstance:
   m_ObjectHideFlags: 0

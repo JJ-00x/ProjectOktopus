@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8177330695820741550}
   - component: {fileID: 5162710552718188847}
   - component: {fileID: 3108846609817352224}
+  - component: {fileID: -9064032898312760556}
   m_Layer: 0
   m_Name: PillowLoftBed
   m_TagString: PickUp
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   playerCollider: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+--- !u!114 &-9064032898312760556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2357236435687997366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &4700011719408179653
 GameObject:
   m_ObjectHideFlags: 0

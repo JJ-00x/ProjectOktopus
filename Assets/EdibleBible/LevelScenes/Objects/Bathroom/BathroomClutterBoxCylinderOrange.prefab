@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -7729259653261112238}
   - component: {fileID: -6750163625873848973}
   - component: {fileID: -2746948849724820555}
+  - component: {fileID: 6363229583201036030}
   m_Layer: 0
   m_Name: BathroomClutterBoxCylinderOrange
   m_TagString: PickUp
@@ -199,6 +200,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 696643934117203492}
   playerCollider: {fileID: 66281140220173319}
+--- !u!114 &6363229583201036030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6470640850332376835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &6228593285999153392
 PrefabInstance:
   m_ObjectHideFlags: 0

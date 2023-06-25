@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2561846860406911375}
   - component: {fileID: 7569539036115643740}
   - component: {fileID: 8254762787044955052}
+  - component: {fileID: 3077814942954865717}
   m_Layer: 0
   m_Name: LivingChair
   m_TagString: PickUp
@@ -99,6 +100,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 4853272620984244773}
   playerCollider: {fileID: 5962743820224177946}
+--- !u!114 &3077814942954865717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569703059633842465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: d2d1392f10b8d4959b0882f2e4a77e9f, type: 3}
+  - {fileID: 8300000, guid: 006cb04a0bd4148f8b8304c3e33fc88c, type: 3}
 --- !u!1 &8338962990122759625
 GameObject:
   m_ObjectHideFlags: 0

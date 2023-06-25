@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8066886102518594184}
   - component: {fileID: -1995369877346501164}
   - component: {fileID: 35095505423460658}
+  - component: {fileID: 5777253938049988192}
   m_Layer: 0
   m_Name: ShelfWeird
   m_TagString: PickUp
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 4927729829545940969}
   playerCollider: {fileID: 8724316762654492034}
+--- !u!114 &5777253938049988192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054229318495209113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &1479084923958943926
 PrefabInstance:
   m_ObjectHideFlags: 0

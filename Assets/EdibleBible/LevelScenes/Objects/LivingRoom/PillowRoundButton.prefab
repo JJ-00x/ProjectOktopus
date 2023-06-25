@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 3031382210347655739}
   - component: {fileID: 1488771179984341924}
   - component: {fileID: -7992159503576484212}
+  - component: {fileID: 8118934947201839967}
   m_Layer: 0
   m_Name: PillowRoundButton
   m_TagString: PickUp
@@ -266,6 +267,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 7844467859440660390}
   playerCollider: {fileID: 4091228593274446426}
+--- !u!114 &8118934947201839967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666358749163648668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &4339559338683537657
 PrefabInstance:
   m_ObjectHideFlags: 0

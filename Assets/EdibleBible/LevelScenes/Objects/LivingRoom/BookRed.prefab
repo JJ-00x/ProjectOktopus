@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 2743337332655375842}
   - component: {fileID: -6568484071797575497}
   - component: {fileID: 5348841672720233892}
+  - component: {fileID: 4613458524221453479}
   m_Layer: 0
   m_Name: BookRed
   m_TagString: PickUp
@@ -266,6 +267,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 7292899879599990468}
   playerCollider: {fileID: 7212488200404555670}
+--- !u!114 &4613458524221453479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854679778163897273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &3642555584750951265
 PrefabInstance:
   m_ObjectHideFlags: 0
