@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6547284715163026531}
   - component: {fileID: 36749901715894797}
+  - component: {fileID: -4411919452644332411}
   - component: {fileID: 9147662761899842841}
+  - component: {fileID: 8728805848538489945}
   m_Layer: 0
   m_Name: PhotoFrameStanding
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,6 +58,21 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-4411919452644332411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839013263730774741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
 --- !u!65 &9147662761899842841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69,6 +86,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0619454, y: 1.5214143, z: 1.6659662}
   m_Center: {x: 0.005161059, y: 0.0025812418, z: 0.007744093}
+--- !u!114 &8728805848538489945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839013263730774741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
 --- !u!1 &1179476524968330636
 GameObject:
   m_ObjectHideFlags: 0

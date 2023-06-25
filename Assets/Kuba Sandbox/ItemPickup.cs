@@ -40,13 +40,13 @@ public class ItemPickup : MonoBehaviour
         switch (speed.value)
         {
             case 5:
-                maxthrowStrenght = 15f;
+                maxthrowStrenght = 45f;
                 break;
             case 4:
-                maxthrowStrenght = 10f;
+                maxthrowStrenght = 30f;
                 break;
             case 3:
-                maxthrowStrenght = 5f;
+                maxthrowStrenght = 15f;
                 break;
             default:
                 break;
@@ -67,6 +67,7 @@ public class ItemPickup : MonoBehaviour
         if (itemToPickUp == null)
         {
             hasItem = false;
+            hasItemSO.value = false;
         }
 
         /*if (hasItem)
@@ -77,7 +78,7 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.transform.GetChild(0).transform.rotation = Quaternion.identity;
         }*/
         
-        if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
+        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
         {
             hasItemSO.value = true;
             hasItem = true;
@@ -86,7 +87,7 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.GetComponent<Rigidbody>().isKinematic = true;
             itemToPickUp.GetComponent<PickableObject>().playerCollider.SetActive(false);
         }
-        else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
+        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
         {
             hasItemSO.value = false;
             hasItem = false;
@@ -101,21 +102,22 @@ public class ItemPickup : MonoBehaviour
     //to update
     private void ThrowItem()
     {
-        if (Input.GetKey(KeyCode.R) && hasItemSO.value)
+        if (Input.GetKey(KeyCode.R) && hasItem)
         {
             throwStrenght += (timeToThrow + 1) * Time.deltaTime;
 
             throwStrSliderGameObject.SetActive(true);
         }
 
-        if (Input.GetKeyUp(KeyCode.R) && hasItemSO.value)
+        if (Input.GetKeyUp(KeyCode.R) && hasItem)
         {
             hasItemSO.value = false;
             hasItem = false;
 
             itemToPickUp.GetComponent<Rigidbody>().isKinematic = false;
-            itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
             itemToPickUp.transform.SetParent(null, true);
+            itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
+            
             throwStrenght = 0;
 
             throwStrSliderGameObject.SetActive(false);
