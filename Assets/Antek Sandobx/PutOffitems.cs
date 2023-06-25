@@ -16,11 +16,15 @@ public class PutOffitems : MonoBehaviour
     [SerializeField] private ScriptableObjectBOOL hasItemSO;
     [SerializeField] private ScriptableObjectBOOL isPopUpEnable;
     [SerializeField] private ScriptableObjectINT objectPrice;
+
+    [SerializeField] private ItemOutline_Collider itemdurability;
+    private int durability;
     
     
     // Start is called before the first frame update
     void Start()
     {
+        itemdurability = GetComponent<ItemOutline_Collider>();
         if(isPopUpEnable)
             isPopUpEnable.value = false;
         moneyWorth = UnityEngine.Random.Range(minValue, maxValue);
@@ -29,7 +33,11 @@ public class PutOffitems : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        durability = itemdurability.itemDurability;
+        if (durability < 0)
+        {
+            Destroy(this);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

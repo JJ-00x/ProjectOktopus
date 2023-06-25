@@ -7,8 +7,10 @@ using UnityEngine;
 public class ItemOutline_Collider : MonoBehaviour
 {
     public Outline _outline;
+    [SerializeField] private ScriptableObjectBOOL isdestroyed;
+    [SerializeField] 
     
-    private int itemDurability = 3;
+    public int itemDurability = 3;
 
     private void Start()
     {
@@ -29,7 +31,7 @@ public class ItemOutline_Collider : MonoBehaviour
                 _outline.OutlineColor = Color.red;
                 break;
             case 0:
-                _outline.DestroyObjectOutline();
+                isdestroyed.value = true;
                 break;
             default:
                 break;

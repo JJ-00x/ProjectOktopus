@@ -20,7 +20,7 @@ public class ItemPickup : MonoBehaviour
     public Gradient throwColor;
     public Image fill;
 
-    [SerializeField] private ScriptableObjectBOOL hasItemSO;
+    public  ScriptableObjectBOOL hasItemSO;
     [SerializeField] private ScriptableObjectINT speed;
 
     public static bool hasItem;
