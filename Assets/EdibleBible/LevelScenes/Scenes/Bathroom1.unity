@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276813, g: 0.21589185, b: 0.29782563, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276774, g: 0.21589114, b: 0.2978246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1824,6 +1824,58 @@ PrefabInstance:
     - target: {fileID: 5540453757901771697, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
       propertyPath: m_Name
       value: BathroomShelf (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8392895230639710950, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
       propertyPath: m_RootOrder
