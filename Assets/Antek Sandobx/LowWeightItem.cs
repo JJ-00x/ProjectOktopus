@@ -8,7 +8,7 @@ public class LowWeightItem : MonoBehaviour
 
     [SerializeField] private ScriptableObjectINT moveSpeed;
 
-    [SerializeField] private GameObject target;
+    [SerializeField] private ScriptableObjectGameObject playerSO;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class LowWeightItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasItem.value && Vector3.Distance(transform.position, target.transform.position) < 2f)
+        if (hasItem.value && Vector3.Distance(transform.position, playerSO.value.transform.position) < 2f)
         {
             moveSpeed.value = 5;
             Debug.Log(moveSpeed.value);
