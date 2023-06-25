@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2998042927580841715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 15.214891, y: 15.214891, z: 15.214891}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5660704674265160316}
@@ -51,9 +51,9 @@ MonoBehaviour:
   maxValue: 6
   minValue: 4
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  popUp: {fileID: 0}
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 0}
 --- !u!65 &9074028108743792494
 BoxCollider:
   m_ObjectHideFlags: 0

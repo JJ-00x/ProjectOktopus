@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 483827248025492091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.238, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 15.422696, y: 15.422696, z: 15.422696}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2330270713760268642}
@@ -43,11 +43,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483827248025492091}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.19763473, z: 0.1759501}
-  m_Center: {x: 0, y: 0.070477776, z: 0.005421318}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0.07819971, z: 0}
 --- !u!65 &6087838329572471585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59,8 +59,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.19763473, z: 0.17594945}
-  m_Center: {x: 0, y: 0.07589925, z: 0.005421318}
+  m_Size: {x: 0.1, y: 0.15, z: 0.1}
+  m_Center: {x: 0, y: 0.066749334, z: 0}
 --- !u!114 &5394277088744083284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,9 +77,9 @@ MonoBehaviour:
   maxValue: 8
   minValue: 6
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  popUp: {fileID: 0}
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 0}
 --- !u!1 &6440126435146502298
 GameObject:
   m_ObjectHideFlags: 0

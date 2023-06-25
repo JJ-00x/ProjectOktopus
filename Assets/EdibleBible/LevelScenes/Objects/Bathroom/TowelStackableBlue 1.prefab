@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2006671136499479460}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53179497, y: 0.5317951, z: 0.24428602}
+  m_LocalScale: {x: 0.62581635, y: 0.62581646, z: 0.2874758}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2001165852489010329}
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 4787881523145975103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.824, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.7321665, y: 3.7321665, z: 3.7321665}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7598689026674137526}
@@ -134,9 +134,9 @@ MonoBehaviour:
   maxValue: 30
   minValue: 20
   money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
-  popUp: {fileID: 0}
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 0}
 --- !u!65 &203916240054670058
 BoxCollider:
   m_ObjectHideFlags: 0
