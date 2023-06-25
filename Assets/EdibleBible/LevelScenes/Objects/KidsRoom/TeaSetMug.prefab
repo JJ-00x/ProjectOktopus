@@ -93,10 +93,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4859230032358530524}
   - component: {fileID: 143121512103059599}
+  - component: {fileID: -1674801956195270204}
   - component: {fileID: 1459664146137519121}
+  - component: {fileID: 1312883975100063800}
   m_Layer: 0
   m_Name: TeaSetMug
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +140,21 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-1674801956195270204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748587435705459586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
 --- !u!65 &1459664146137519121
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -151,6 +168,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26656342, y: 0.30802825, z: 0.68}
   m_Center: {x: 0.0012969971, y: 0.14383681, z: 0}
+--- !u!114 &1312883975100063800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748587435705459586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  playerCollider: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
 --- !u!1001 &3119802360308186851
 PrefabInstance:
   m_ObjectHideFlags: 0

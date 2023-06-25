@@ -94,6 +94,8 @@ GameObject:
   - component: {fileID: 151393056418912721}
   - component: {fileID: 2624926601222281307}
   - component: {fileID: 8066886102518594184}
+  - component: {fileID: -1995369877346501164}
+  - component: {fileID: 35095505423460658}
   m_Layer: 0
   m_Name: ShelfWeird
   m_TagString: PickUp
@@ -151,6 +153,35 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-1995369877346501164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054229318495209113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
+--- !u!114 &35095505423460658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054229318495209113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 4927729829545940969}
+  playerCollider: {fileID: 8724316762654492034}
 --- !u!1001 &1479084923958943926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -249,6 +280,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   m_PrefabInstance: {fileID: 1479084923958943926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4927729829545940969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  m_PrefabInstance: {fileID: 1479084923958943926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3425529644944492917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,6 +378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+--- !u!1 &8724316762654492034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+  m_PrefabInstance: {fileID: 3425529644944492917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8744907018008976799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6257131049327940842, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}

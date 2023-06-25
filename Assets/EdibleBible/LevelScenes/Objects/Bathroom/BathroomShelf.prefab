@@ -94,9 +94,12 @@ GameObject:
   - component: {fileID: 8392895230639710950}
   - component: {fileID: 6945877695243515534}
   - component: {fileID: 8584532222841037294}
+  - component: {fileID: -7653296253026474185}
+  - component: {fileID: -6788016070192465595}
+  - component: {fileID: -2059559972299138735}
   m_Layer: 0
   m_Name: BathroomShelf
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +154,51 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-7653296253026474185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5540453757901771697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
+--- !u!54 &-6788016070192465595
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5540453757901771697}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &-2059559972299138735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5540453757901771697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 3898384516332318418}
+  playerCollider: {fileID: 8450685673263068173}
 --- !u!1001 &2584449462146349306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,6 +261,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6257131049327940842, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
   m_PrefabInstance: {fileID: 2584449462146349306}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8450685673263068173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+  m_PrefabInstance: {fileID: 2584449462146349306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7421311911289231757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,6 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+--- !u!1 &3898384516332318418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  m_PrefabInstance: {fileID: 7421311911289231757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4745607670399244209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}

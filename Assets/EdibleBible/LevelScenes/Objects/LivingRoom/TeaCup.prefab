@@ -94,6 +94,8 @@ GameObject:
   - component: {fileID: 7809927431259566396}
   - component: {fileID: 6799794761803641961}
   - component: {fileID: 1233600649858455791}
+  - component: {fileID: -3406688213869874949}
+  - component: {fileID: -8931990653641129328}
   m_Layer: 0
   m_Name: TeaCup
   m_TagString: PickUp
@@ -151,6 +153,35 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-3406688213869874949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623359818308584336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
+--- !u!114 &-8931990653641129328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623359818308584336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 8010103328542466723}
+  playerCollider: {fileID: 1929848786979746878}
 --- !u!1001 &4597481722415240700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,6 +244,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   m_PrefabInstance: {fileID: 4597481722415240700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8010103328542466723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  m_PrefabInstance: {fileID: 4597481722415240700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5499776886342432969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -273,5 +309,10 @@ PrefabInstance:
 --- !u!4 &1911472900533808163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6257131049327940842, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+  m_PrefabInstance: {fileID: 5499776886342432969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1929848786979746878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
   m_PrefabInstance: {fileID: 5499776886342432969}
   m_PrefabAsset: {fileID: 0}

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6980709458978616822}
   - component: {fileID: 8629734752569229186}
   - component: {fileID: 1621356328752281596}
+  - component: {fileID: -5652989322069721821}
+  - component: {fileID: 1526140680603085461}
   m_Layer: 0
   m_Name: FloorLightPlastic
   m_TagString: PickUp
@@ -68,6 +70,35 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
+--- !u!114 &-5652989322069721821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068631182804041615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0fde0dce87ab44b0660f38f920e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
+  moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
+--- !u!114 &1526140680603085461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068631182804041615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48001e9898b0c1f4289a9975c6c4ff84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsCollider: {fileID: 8991405286929301120}
+  playerCollider: {fileID: 8701430984621016693}
 --- !u!1 &9074406852094260132
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +280,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   m_PrefabInstance: {fileID: 3180650423726279135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8991405286929301120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+  m_PrefabInstance: {fileID: 3180650423726279135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3340162047937907330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,5 +381,10 @@ PrefabInstance:
 --- !u!4 &8687276719240306280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6257131049327940842, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+  m_PrefabInstance: {fileID: 3340162047937907330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8701430984621016693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
   m_PrefabInstance: {fileID: 3340162047937907330}
   m_PrefabAsset: {fileID: 0}

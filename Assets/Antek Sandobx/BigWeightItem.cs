@@ -19,8 +19,7 @@ public class BigWeightItem : MonoBehaviour
     {
         if (hasItem.value && Vector3.Distance(transform.position, playerSO.value.transform.position) < 2f)
         {
-            moveSpeed.value = 3;
-            Debug.Log(moveSpeed.value);
+            moveSpeed.value = 15;
         }
     }
 }
