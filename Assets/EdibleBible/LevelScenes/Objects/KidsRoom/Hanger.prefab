@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8895327486868903889}
   - component: {fileID: 4388761863241998612}
   - component: {fileID: -4675331604694373044}
+  - component: {fileID: -1083642711162908424}
   m_Layer: 0
   m_Name: Hanger
   m_TagString: PickUp
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 8743722677622494267}
   playerCollider: {fileID: 8821694786658258755}
+--- !u!114 &-1083642711162908424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812487558934779513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &3004994690046796644
 PrefabInstance:
   m_ObjectHideFlags: 0

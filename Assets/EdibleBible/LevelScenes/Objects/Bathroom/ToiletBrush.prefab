@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6874477054174166}
   - component: {fileID: -6170165258439934809}
   - component: {fileID: -8675893269588946583}
+  - component: {fileID: 3926559967868507868}
   m_Layer: 0
   m_Name: ToiletBrush
   m_TagString: PickUp
@@ -116,6 +117,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &3926559967868507868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136216451521744776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &8656650871170296343
 GameObject:
   m_ObjectHideFlags: 0

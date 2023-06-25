@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 233494361100233531}
   - component: {fileID: 3137456995571616874}
   - component: {fileID: 3596616097184677496}
+  - component: {fileID: -2498552475549169468}
   m_Layer: 0
   m_Name: Guitar
   m_TagString: PickUp
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &-2498552475549169468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558157035871692359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &7349196404498266265
 GameObject:
   m_ObjectHideFlags: 0

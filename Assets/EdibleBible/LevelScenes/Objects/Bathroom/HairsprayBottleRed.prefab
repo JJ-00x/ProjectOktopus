@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -5611887820642891377}
   - component: {fileID: -378735055874115591}
   - component: {fileID: -8619865567514846818}
+  - component: {fileID: 3563710262982408295}
   m_Layer: 0
   m_Name: HairsprayBottleRed
   m_TagString: PickUp
@@ -199,6 +200,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &3563710262982408295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106440681755686912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &3832532540942984110
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 5027823759782186583}
   - component: {fileID: -9121916854057120206}
   - component: {fileID: -4976082582995057679}
+  - component: {fileID: 359630611888879526}
   m_Layer: 0
   m_Name: DiningChair
   m_TagString: PickUp
@@ -267,6 +268,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &359630611888879526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903845004384816590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: c0a538a5767055a4c82bb7ee4352a0c5, type: 3}
+  - {fileID: 8300000, guid: 7e4f49480fdaf304bbbe695bf190aad7, type: 3}
 --- !u!1 &8017474192323799124
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,18 +378,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.575
-      objectReference: {fileID: 0}
-    - target: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0702969
-      objectReference: {fileID: 0}
-    - target: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0026993
       objectReference: {fileID: 0}
@@ -416,30 +420,6 @@ PrefabInstance:
     - target: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
       propertyPath: m_Name
       value: CollideWithEnv
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Size.x
-      value: 0.60112727
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Size.y
-      value: 0.19481046
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Size.z
-      value: 0.7125205
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0063511822
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Center.y
-      value: -0.004381236
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
-      propertyPath: m_Center.z
-      value: 0.3118528
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}

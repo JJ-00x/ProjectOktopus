@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1621356328752281596}
   - component: {fileID: -5652989322069721821}
   - component: {fileID: 1526140680603085461}
+  - component: {fileID: -5440026419935354790}
   m_Layer: 0
   m_Name: FloorLightPlastic
   m_TagString: PickUp
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &-5440026419935354790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068631182804041615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &9074406852094260132
 GameObject:
   m_ObjectHideFlags: 0

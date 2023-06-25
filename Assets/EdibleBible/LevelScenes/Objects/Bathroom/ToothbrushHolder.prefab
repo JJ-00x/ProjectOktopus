@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: -291592360409832292}
   - component: {fileID: -5417745446338258014}
   - component: {fileID: -4460098827913071648}
+  - component: {fileID: 2425317297016142422}
   m_Layer: 0
   m_Name: ToothbrushHolder
   m_TagString: PickUp
@@ -367,6 +368,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &2425317297016142422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8649545983909593470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &4222584159818661716
 PrefabInstance:
   m_ObjectHideFlags: 0

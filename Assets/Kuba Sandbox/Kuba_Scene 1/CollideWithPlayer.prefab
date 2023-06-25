@@ -27,7 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.91999996, y: -2.34, z: 0.7532284}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,5 +43,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.60198355, y: 0.18140642, z: 0.7080681}
-  m_Center: {x: -0.002242921, y: -0.03, z: 0.30963355}
+  m_Size: {x: 0.5518664, y: 0.13858834, z: 0.91008323}
+  m_Center: {x: 0.017039118, y: -0.006284846, z: 0.000285916}

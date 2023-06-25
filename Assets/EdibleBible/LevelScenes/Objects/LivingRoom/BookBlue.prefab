@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 2743337332655375842}
   - component: {fileID: 3414573131243486190}
   - component: {fileID: 7243722527203217704}
+  - component: {fileID: 1466606226529629002}
   m_Layer: 0
   m_Name: BookBlue
   m_TagString: PickUp
@@ -266,6 +267,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &1466606226529629002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854679778163897273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: afb43cef066cef441837263fb15caf60, type: 3}
+  - {fileID: 8300000, guid: fbcd1d50098e3f84e83f11861a4d9ec3, type: 3}
+  - {fileID: 8300000, guid: f86f36aa50ecd364b9a0bc0b35559f55, type: 3}
+  - {fileID: 8300000, guid: c234caa2eba0ba44a9b80f42c989b5b2, type: 3}
 --- !u!1001 &859935647673917829
 PrefabInstance:
   m_ObjectHideFlags: 0

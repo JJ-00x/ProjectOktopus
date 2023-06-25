@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -7251893256631295114}
   - component: {fileID: 1843171471077222227}
   - component: {fileID: 1336809753898651829}
+  - component: {fileID: -5161543474768410115}
   m_Layer: 0
   m_Name: Hamper
   m_TagString: PickUp
@@ -201,6 +202,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 0}
   playerCollider: {fileID: 0}
+--- !u!114 &-5161543474768410115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884509655347220459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1 &1207981969220891283
 GameObject:
   m_ObjectHideFlags: 0

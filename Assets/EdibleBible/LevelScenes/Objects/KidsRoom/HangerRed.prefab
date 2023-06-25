@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: -7931982018284716626}
   - component: {fileID: 4157373735484092842}
   - component: {fileID: -3755470284166980094}
+  - component: {fileID: -571868802566893128}
   m_Layer: 0
   m_Name: HangerRed
   m_TagString: PickUp
@@ -266,6 +267,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsCollider: {fileID: 5828805589619963743, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
   playerCollider: {fileID: 6240602390471199991, guid: c004be04c5abd3b41b510de45449f8d1, type: 3}
+--- !u!114 &-571868802566893128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669776120821810934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2885cab37643f58712a0f3b7cbac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
 --- !u!1001 &4906890070332914899
 PrefabInstance:
   m_ObjectHideFlags: 0
