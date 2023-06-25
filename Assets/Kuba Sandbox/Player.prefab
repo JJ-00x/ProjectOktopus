@@ -781,7 +781,7 @@ MonoBehaviour:
   hands: {fileID: 8384445964392852843}
   throwStrenght: 0
   maxthrowStrenght: 15
-  timeToThrow: 7
+  timeToThrow: 40
   throwStrSliderGameObject: {fileID: 1315668456}
   throwStrSlider: {fileID: 1315668458}
   throwColor:
@@ -856,7 +856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8845203589218766390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.692}
+  m_LocalPosition: {x: 0, y: 0, z: 1.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
