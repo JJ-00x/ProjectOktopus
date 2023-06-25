@@ -1825,6 +1825,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: BathroomShelf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453480664573432373, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945877695243515534, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8392895230639710950, guid: edd8cb7ed8c95cf4a9fee1df1100bee4, type: 3}
       propertyPath: m_RootOrder
       value: 84
