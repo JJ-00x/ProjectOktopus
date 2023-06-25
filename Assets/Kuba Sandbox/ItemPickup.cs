@@ -67,6 +67,7 @@ public class ItemPickup : MonoBehaviour
         if (itemToPickUp == null)
         {
             hasItem = false;
+            return;
         }
 
         /*if (hasItem)
@@ -77,7 +78,7 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.transform.GetChild(0).transform.rotation = Quaternion.identity;
         }*/
         
-        if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
+        if (Input.GetKeyDown(KeyCode.E) && !hasItem)
         {
             hasItemSO.value = true;
             hasItem = true;
@@ -86,7 +87,7 @@ public class ItemPickup : MonoBehaviour
             itemToPickUp.GetComponent<Rigidbody>().isKinematic = true;
             itemToPickUp.GetComponent<PickableObject>().playerCollider.SetActive(false);
         }
-        else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
+        else if (Input.GetKeyDown(KeyCode.E) && hasItem)
         {
             hasItemSO.value = false;
             hasItem = false;
@@ -144,7 +145,6 @@ public class ItemPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "PickUp" && !hasItemSO.value)
         {
-            Debug.Log("ITEM");
             itemToPickUp = other.gameObject;
         }
     }
@@ -153,7 +153,7 @@ public class ItemPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "PickUp" && !hasItemSO.value)
         {
-            Debug.Log("ITEM");
+            Debug.Log("item collide:" + other.gameObject.name);
             itemToPickUp = null;
         }
     }
