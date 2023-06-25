@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
-  playerSO: {fileID: 0}
+  playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
 --- !u!114 &1583599625211925624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollideWithEnv
       objectReference: {fileID: 0}
+    - target: {fileID: 7076144339759201934, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4017842995623442104, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
     - {fileID: 6052674321459707972, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}
@@ -357,6 +361,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _outline: {fileID: 0}
+--- !u!65 &619053381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622475758750049520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6027776553084280211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}

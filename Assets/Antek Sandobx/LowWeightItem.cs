@@ -21,7 +21,6 @@ public class LowWeightItem : MonoBehaviour
         if (hasItem.value && Vector3.Distance(transform.position, playerSO.value.transform.position) < 2f)
         {
             moveSpeed.value = 5;
-            Debug.Log(moveSpeed.value);
         }
     }
 }

@@ -80,6 +80,10 @@ public class Outline : MonoBehaviour {
 
   private bool needsUpdate;
 
+  public void DestroyObjectOutline()
+  {
+    Destroy(gameObject);
+  }
   void Awake() {
 
     // Cache renderers

@@ -29,7 +29,7 @@ public class ItemOutline_Collider : MonoBehaviour
                 _outline.OutlineColor = Color.red;
                 break;
             case 0:
-                Destroy(gameObject);
+                _outline.DestroyObjectOutline();
                 break;
             default:
                 break;
