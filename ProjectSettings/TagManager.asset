@@ -16,8 +16,8 @@ TagManager:
   - UI
   - PickUpObject
   - PlayerBody
-  - 
-  - 
+  - ColideWithobjects
+  - Floor
   - 
   - 
   - 
