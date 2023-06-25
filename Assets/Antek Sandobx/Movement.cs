@@ -54,6 +54,7 @@ public class Movement : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask))
         {
+            Debug.Log(hit.transform.gameObject.name);
             // Calculate the direction from the player to the hit point
             Vector3 direction = hit.point - transform.position;
             direction.y = 0f; // Ensure the player stays upright (optional)
