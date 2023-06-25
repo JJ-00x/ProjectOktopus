@@ -38,6 +38,7 @@ public class PutOffitems : MonoBehaviour
             popUp.enabled = true;
             money.value += moneyWorth;
             hasItemSO.value = false;
+            ItemPickup.hasItem = false;
             Destroy(gameObject);
         }
     }

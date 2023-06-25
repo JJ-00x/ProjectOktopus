@@ -11,7 +11,7 @@ public class ItemPickup : MonoBehaviour
     public Transform hands;
     public static GameObject itemToPickUp;
 
-    private bool hasItem;
+    public static bool hasItem;
     
     public float throwStrenght = 0f;
     public float maxthrowStrenght = 15f;
@@ -25,7 +25,8 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private ScriptableObjectINT speed;
     
      void Start()
-    {
+     {
+         hasItem = false;
         hasItemSO.value = false;
         throwStrSliderGameObject.SetActive(false);
     }
@@ -69,6 +70,7 @@ public class ItemPickup : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R) && hasItemSO.value)
         {
             hasItemSO.value = false;
+            hasItem = false;
             AddRigidbody();
 
             itemToPickUp.GetComponent<Rigidbody>().AddForce(transform.forward * throwStrenght, ForceMode.Impulse);
@@ -89,7 +91,7 @@ public class ItemPickup : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && !hasItemSO.value)
         {  
             hasItemSO.value = true;
-            
+            hasItem = true;
 
             itemToPickUp.transform.SetParent(hands, true);
             itemToPickUp.transform.position = hands.transform.position;
@@ -101,6 +103,7 @@ public class ItemPickup : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && hasItemSO.value)
         {
             hasItemSO.value = false;
+            hasItem = false;
             AddRigidbody();
 
             itemToPickUp.transform.SetParent(null, true);
