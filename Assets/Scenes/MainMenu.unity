@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b21f9e6a4d4c4c9b964c5dab130eef2, type: 2}
   m_sharedMaterial: {fileID: 6300845187901298579, guid: 2b21f9e6a4d4c4c9b964c5dab130eef2, type: 2}
@@ -1321,7 +1321,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work in progress
+  m_text: "Radek Wo\u017Anicki\r\nTeam Lead\r\nGame Design\r\n\r\nAntek Antkiewicz\r\nProgramming\r\n\r\nKuba
+    \u017Burawik\r\nProgramming\r\n\r\nJakub J\xF3skowiak\r\nUI\r\nAudio\r\nLevel
+    Design\r\n\r\nOla Chudy\r\n3D Models\r\nLevel Design"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2490,7 +2492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructionText: {fileID: 325406918}
-  creditsText: {fileID: 0}
+  creditsText: {fileID: 594118492}
 --- !u!114 &1267526429
 MonoBehaviour:
   m_ObjectHideFlags: 0
