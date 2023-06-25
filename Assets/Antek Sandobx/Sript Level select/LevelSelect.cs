@@ -19,10 +19,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] private int maxCost;  
     [SerializeField] private int minCost;
     [SerializeField] private ScriptableObjectINT playerMoney;
-    [SerializeField] private int sceneRange1max;
-    [SerializeField] private int sceneRange1min;
-    [SerializeField] private int sceneRange2max;
-    [SerializeField] private int sceneRange2min;
+    [SerializeField] private TextMeshProUGUI textPlayerMoney;
 
     [SerializeField] private TextMeshProUGUI textPriceOfScene1;
     [SerializeField] private TextMeshProUGUI textPriceOfScene2;
@@ -36,6 +33,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] private List<int> sceneRangeBathroom = new List<int>();
     [SerializeField] private List<int> sceneRangeKidsRoom = new List<int>();
     [SerializeField] private List<int> sceneChoosed = new List<int>();
+    
 
     
     // Start is called before the first frame update
@@ -60,6 +58,8 @@ public class LevelSelect : MonoBehaviour
         {
             youLose.SetActive(true);
         }
+
+        textPlayerMoney.text = "Your Money: " + playerMoney.value.ToString() + "$";
     }
 
     // Update is called once per frame
@@ -94,7 +94,7 @@ public class LevelSelect : MonoBehaviour
             {
                 case 1:
                     _images[index].sprite = sprites[0];
-                    roomName[index].text = "Livingroom";
+                    roomName[index].text = "Living Room";
                     sceneChoosed[index] = Random.Range(sceneRangeLivingroom[0], sceneRangeLivingroom.Count);
                     break;
                 case 2:
@@ -104,7 +104,7 @@ public class LevelSelect : MonoBehaviour
                     break;
                 case 3:
                     _images[index].sprite = sprites[2];
-                    roomName[index].text = "Kidsroom";
+                    roomName[index].text = "Kid's room";
                     sceneChoosed[index] = Random.Range(sceneRangeKidsRoom[0], sceneRangeKidsRoom.Count);
                     break;
                 default:

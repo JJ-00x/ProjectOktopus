@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public partial class Timer : MonoBehaviour
 {
     public float countdownTime = 60f; // Set the initial countdown time in seconds
     public TMP_Text countdownText; // Reference to the TMP text element
