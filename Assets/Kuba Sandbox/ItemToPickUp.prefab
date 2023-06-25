@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1339642154}
   - component: {fileID: 5591913582978905713}
   - component: {fileID: 881128063}
-  - component: {fileID: 1583599625211925624}
   m_Layer: 0
   m_Name: ItemToPickUp
   m_TagString: PickUp
@@ -139,7 +138,6 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
-  itemdurability: {fileID: 0}
 --- !u!114 &5591913582978905713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,24 +167,6 @@ MonoBehaviour:
   hasItem: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   moveSpeed: {fileID: 11400000, guid: 4630ba75e5294e9439e950c4b4c0ee51, type: 2}
   playerSO: {fileID: 11400000, guid: 11ad0004d1e7a1e4ca6af17410029a5c, type: 2}
---- !u!114 &1583599625211925624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7847823267865820985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &1116385186905196525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,19 +247,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1685478702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6477619540632226586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dece07facbe1524889fdc634b88b673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _outline: {fileID: 0}
 --- !u!1001 &8394978002534224815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,21 +342,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6373978369150650438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2622475758750049520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dbd5f797d1f59f43ab8e69e456d031d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _outline: {fileID: 0}
-  isdestroyed: {fileID: 0}
-  itemDurability: 3
 --- !u!4 &6027776553084280211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2820945332093914684, guid: 34c61ee90cdfad84e8219861b8bf5067, type: 3}

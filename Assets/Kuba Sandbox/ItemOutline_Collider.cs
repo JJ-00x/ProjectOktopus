@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -56,5 +57,6 @@ public class ItemOutline_Collider : MonoBehaviour
             itemDurability--;
             Debug.Log(other.gameObject.name);
         }
-    }*/
+    }#1#
 }
+*/

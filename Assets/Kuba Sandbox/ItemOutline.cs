@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -63,13 +64,5 @@ public class ItemOutline : MonoBehaviour
             _outline.enabled = false;
         }
     }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag != "Ground" && other.gameObject.tag != "Player")
-        {
-            itemDurability--;
-        }
-        
-    }
 }
+*/
