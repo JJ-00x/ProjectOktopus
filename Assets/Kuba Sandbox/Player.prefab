@@ -469,8 +469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 2
   popUp: {fileID: 0}
-  isPopUpEnable: {fileID: 0}
-  objectPrice: {fileID: 0}
+  isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
+  objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
 --- !u!1 &1953666861
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 2465266608476443861}
   - component: {fileID: 598613051}
   - component: {fileID: 598613053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -578,8 +578,8 @@ Transform:
   m_GameObject: {fileID: 3908184791710941885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.25, z: 0}
-  m_LocalScale: {x: 3.5191, y: 4.20638, z: 3.5191}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1.1952999, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8384445964392852843}
   - {fileID: 1538796461}
@@ -755,7 +755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8845203589218766390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

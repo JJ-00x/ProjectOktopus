@@ -1154,29 +1154,9 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1854625498}
-    - target: {fileID: 1777269302, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: objectPrice
-      value: 
-      objectReference: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
-    - target: {fileID: 1777269302, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: isPopUpEnable
-      value: 
-      objectReference: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
     - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1952999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1218,21 +1198,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3908184791710941873, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3908184791710941885, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3908184791710941885, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384445964392852843, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5942d09fc03287840b09c1a4c329ef78, type: 3}
