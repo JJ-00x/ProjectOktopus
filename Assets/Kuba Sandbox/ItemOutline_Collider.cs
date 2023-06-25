@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemOutline_Collider : MonoBehaviour
@@ -34,14 +35,25 @@ public class ItemOutline_Collider : MonoBehaviour
                 break;
         }
     }
-    
-    //interact with player goes off, fix
-    private void OnCollisionEnter(Collision other)
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag != "Ground" && other.gameObject.tag != "Player")
         {
+            Debug.Log("Itemdurability");
             itemDurability--;
             Debug.Log(other.gameObject.name);
         }
     }
+    
+    //interact with player goes off, fix
+    /*private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag != "Ground" || other.gameObject.tag != "Player")
+        {
+            Debug.Log("Itemdurability");
+            itemDurability--;
+            Debug.Log(other.gameObject.name);
+        }
+    }*/
 }
