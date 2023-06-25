@@ -353,7 +353,6 @@ MonoBehaviour:
   hasItemSO: {fileID: 11400000, guid: 2dfa78a8301873f4cb5171af6921270b, type: 2}
   isPopUpEnable: {fileID: 11400000, guid: 1dd808d55e7f07d49963f0a07690fe1a, type: 2}
   objectPrice: {fileID: 11400000, guid: d73d838949b793849b51a6887a947d6a, type: 2}
-  itemdurability: {fileID: 0}
 --- !u!1 &796749689
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +570,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1583599625211925624, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 473b7033c8f30dd42a6802db6a3b7045, type: 3}
 --- !u!4 &1116208166 stripped
 Transform:
