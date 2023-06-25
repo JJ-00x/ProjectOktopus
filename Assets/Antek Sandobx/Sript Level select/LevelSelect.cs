@@ -27,7 +27,7 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textPriceOfScene1;
     [SerializeField] private TextMeshProUGUI textPriceOfScene2;
 
-    [SerializeField] private TextMeshProUGUI youLose;
+    [SerializeField] private GameObject youLose;
     [SerializeField] private Sprite[] sprites;
 
     [SerializeField] private List<Image> _images = new List<Image>();
@@ -57,7 +57,8 @@ public class LevelSelect : MonoBehaviour
         }
         else
         {
-            youLose.enabled = true;
+            
+            
         }
     }
 
@@ -109,5 +110,9 @@ public class LevelSelect : MonoBehaviour
                 default:
                     break;
             }
+    }
+    public void RestartButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }
