@@ -8,8 +8,7 @@ public class ItemOutline_Collider : MonoBehaviour
 {
     public Outline _outline;
     [SerializeField] private ScriptableObjectBOOL isdestroyed;
-    [SerializeField] 
-    
+
     public int itemDurability = 3;
 
     private void Start()
