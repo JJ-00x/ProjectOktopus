@@ -23,6 +23,8 @@ public class LevelSelect : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI textPriceOfScene1;
     [SerializeField] private TextMeshProUGUI textPriceOfScene2;
+
+    [SerializeField] private TextMeshProUGUI youLose;
     
     
     
@@ -38,9 +40,15 @@ public class LevelSelect : MonoBehaviour
 
     private void Start()
     {
-       // if(playerMoney.value > price_level_1 && playerMoney.value > price_level_2)
-        textPriceOfScene1.text = price_level_1.ToString();
-        textPriceOfScene2.text = price_level_2.ToString();
+        if (playerMoney.value > price_level_1 && playerMoney.value > price_level_2)
+        {
+            textPriceOfScene1.text = price_level_1.ToString();
+            textPriceOfScene2.text = price_level_2.ToString();
+        }
+        else
+        {
+            youLose.enabled = true;
+        }
     }
 
     // Update is called once per frame
