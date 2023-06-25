@@ -41,6 +41,11 @@ public class ItemOutline : MonoBehaviour
             default:
                 break;
         }
+
+        if (ItemPickup.hasItem)
+        {
+            ItemPickup.itemToPickUp.GetComponent<Outline>().enabled = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
