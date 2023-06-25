@@ -40,7 +40,8 @@ public class LevelSelect : MonoBehaviour
     
     // Start is called before the first frame update
     void Awake()
-    {
+    {   
+        youLose.SetActive(false);
         ImageChoosing(0);
         ImageChoosing(1);
         price_level_1 = Random.Range(minCost, maxCost);
@@ -57,8 +58,7 @@ public class LevelSelect : MonoBehaviour
         }
         else
         {
-            
-            
+            youLose.SetActive(true);
         }
     }
 
