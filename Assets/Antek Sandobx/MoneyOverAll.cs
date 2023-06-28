@@ -14,17 +14,16 @@ public class MoneyOverAll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moneyOnScene.value = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         textMoney.text = moneyOnScene.value.ToString() + "$";
     }
 
+    // Update is called once per frame
+   
+
     private void OnDestroy()
     {
-        overAllMoney.value = moneyOnScene.value;
+        overAllMoney.value += moneyOnScene.value;
     }
+
+    
 }

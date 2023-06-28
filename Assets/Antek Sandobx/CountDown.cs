@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class CountDown : MonoBehaviour
 {
@@ -10,9 +12,11 @@ public class CountDown : MonoBehaviour
     public float timeRemaining = 60;
     public bool timerIsRunning = false;
     public TextMeshProUGUI canvastext;
-    public GameObject canvas;
-    public ScriptableObjectINT money;
+    public GameObject canvas; 
+    public ScriptableObjectINT moneyOnScene;
+    public ScriptableObjectINT allPlayerMoney;
     public TextMeshProUGUI moneytext;
+    private int moneytextint;
     private void Start()
     {
         // Starts the timer automatically
@@ -25,12 +29,12 @@ public class CountDown : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                canvastext.text = timeRemaining.ToString() + "s";
-                
+                moneytextint = (int)timeRemaining;
+                canvastext.text = moneytextint.ToString() + "s";
             }
             else
             {
-                
+                allPlayerMoney.value += moneyOnScene.value;
                 canvas.SetActive(true);
                 timeRemaining = 0;
                 timerIsRunning = false;
@@ -38,6 +42,13 @@ public class CountDown : MonoBehaviour
             }
         }
 
-        moneytext.text = money.value.ToString() + "$";
+        
+        moneytext.text = moneyOnScene.value.ToString() + "$";
+        
+    }
+
+    private void OnDestroy()
+    {
+        
     }
 }

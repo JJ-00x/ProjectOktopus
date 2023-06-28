@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2405,6 +2405,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructionText: {fileID: 0}
   creditsText: {fileID: 0}
+  allPlayermoney: {fileID: 0}
+  levelPriceMultiplication: {fileID: 0}
 --- !u!1 &1267526423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,6 +2529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructionText: {fileID: 325406918}
   creditsText: {fileID: 594118492}
+  allPlayermoney: {fileID: 11400000, guid: 8f0632c974d6a9449a04e53eeba0e842, type: 2}
+  levelPriceMultiplication: {fileID: 11400000, guid: d9b8305e67aa7f643a5eda0e246a3004, type: 2}
 --- !u!114 &1267526429
 MonoBehaviour:
   m_ObjectHideFlags: 0

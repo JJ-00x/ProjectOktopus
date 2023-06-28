@@ -18,13 +18,15 @@ public class LevelSelect : MonoBehaviour
 
     [SerializeField] private int maxCost;  
     [SerializeField] private int minCost;
-    [SerializeField] private ScriptableObjectINT playerMoney;
+    [SerializeField] private ScriptableObjectINT allPlayerMoney;
     [SerializeField] private TextMeshProUGUI textPlayerMoney;
-
+    [SerializeField] private ScriptableObjectINT levelPriceMultiplication;
+    
     [SerializeField] private TextMeshProUGUI textPriceOfScene1;
     [SerializeField] private TextMeshProUGUI textPriceOfScene2;
 
     [SerializeField] private GameObject youLose;
+    [SerializeField] private GameObject nextLevel;
     [SerializeField] private Sprite[] sprites;
 
     [SerializeField] private List<Image> _images = new List<Image>();
@@ -33,6 +35,8 @@ public class LevelSelect : MonoBehaviour
     [SerializeField] private List<int> sceneRangeBathroom = new List<int>();
     [SerializeField] private List<int> sceneRangeKidsRoom = new List<int>();
     [SerializeField] private List<int> sceneChoosed = new List<int>();
+
+   
     
 
     
@@ -44,12 +48,14 @@ public class LevelSelect : MonoBehaviour
         ImageChoosing(1);
         price_level_1 = Random.Range(minCost, maxCost);
         price_level_2 = Random.Range(minCost, maxCost);
+        price_level_1 = (int)(levelPriceMultiplication.value * price_level_1);
+        price_level_2 = (int)(price_level_1 * levelPriceMultiplication.value);
+        levelPriceMultiplication.value += 0.5f;
     }
 
     private void Start()
     {
-        
-        if (playerMoney.value > price_level_1 && playerMoney.value > price_level_2)
+        if (allPlayerMoney.value > price_level_1 && allPlayerMoney.value > price_level_2)
         {
             textPriceOfScene1.text = price_level_1.ToString();
             textPriceOfScene2.text = price_level_2.ToString();
@@ -57,9 +63,9 @@ public class LevelSelect : MonoBehaviour
         else
         {
             youLose.SetActive(true);
+            nextLevel.SetActive(false);
         }
-
-        textPlayerMoney.text = "Your Money: " + playerMoney.value.ToString() + "$";
+        textPlayerMoney.text = "Your Money: " + allPlayerMoney.value.ToString() + "$";
     }
 
     // Update is called once per frame
@@ -71,17 +77,17 @@ public class LevelSelect : MonoBehaviour
 
     public void ChooseScene1()
     {
-        if(playerMoney.value > price_level_1)
+        if(allPlayerMoney.value > price_level_1)
         {
-            playerMoney.value -= price_level_1;
+            allPlayerMoney.value -= price_level_1;
             SceneManager.LoadScene(sceneChoosed[0]);
         }
     }
     public void ChooseScene2()
     {
-        if (playerMoney.value > price_level_2)
+        if (allPlayerMoney.value > price_level_2)
         {
-            playerMoney.value -= price_level_2;
+            allPlayerMoney.value -= price_level_2;
             SceneManager.LoadScene(sceneChoosed[1]);
         }
     }
@@ -113,6 +119,7 @@ public class LevelSelect : MonoBehaviour
     }
     public void RestartButton()
     {
+        allPlayerMoney.value = 500;
         SceneManager.LoadScene(0);
     }
 }

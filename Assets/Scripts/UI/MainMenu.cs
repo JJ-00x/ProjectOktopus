@@ -10,8 +10,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject creditsText;
     private bool instruction = false;
     private bool credits= false;
+    [SerializeField] private ScriptableObjectINT allPlayermoney;
+    [SerializeField] private ScriptableObjectINT levelPriceMultiplication;
     public void PlayGame ()
     {
+        levelPriceMultiplication.value = 1f;
+        allPlayermoney.value = 500;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

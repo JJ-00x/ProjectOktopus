@@ -314,11 +314,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc433e1f01cbd549bd34ff4f65c6017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 10
   timerIsRunning: 0
   canvastext: {fileID: 8197118496845785834}
   canvas: {fileID: 8197118496845785832}
-  money: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
+  moneyOnScene: {fileID: 11400000, guid: ffb709df87081f3459dc91c29151533e, type: 2}
+  allPlayerMoney: {fileID: 11400000, guid: 8f0632c974d6a9449a04e53eeba0e842, type: 2}
   moneytext: {fileID: 8197118496259313858}
 --- !u!1 &8197118497506419580
 GameObject:

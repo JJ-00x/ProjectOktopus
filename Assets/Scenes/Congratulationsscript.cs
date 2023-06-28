@@ -23,6 +23,7 @@ public class Congratulationsscript : MonoBehaviour
 
     public void NextLevel()
     {
+        playerMoney.value = 0;
         SceneManager.LoadScene(1);
     }
 }
